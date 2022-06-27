@@ -1,0 +1,8 @@
+{
+  "initial": {
+    "prefix": "crypto-account-component-init",
+    "body": [],
+    "description": "CryptoAccountComponent",
+    "scope": "javascript,typescript,typescriptreact"
+  }
+}

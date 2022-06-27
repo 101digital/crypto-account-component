@@ -1,0 +1,41 @@
+{
+  "name": "crypto-account-component-init",
+  "version": "0.0.1",
+  "description": "A component for crypto account by 101D",
+  "repository": "https://github.com/101digital/crypto-account-component",
+  "main": "index.ts",
+  "types": "index.d.ts",
+  "files": [
+    "src/"
+  ],
+  "scripts": {
+    "lint": "tsc --noEmit && eslint src/ --ext .js,.jsx,.ts,.tsx"
+  },
+  "keywords": [],
+  "author": "khoi-101D",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@types/react": "^16.9.48",
+    "@types/react-native": "^0.63.13",
+    "eslint": "^7.8.1",
+    "react": "16.13.1",
+    "react-native": "0.63.2",
+    "typescript": "^4.0.2"
+  },
+  "resolutions": {
+    "@react-native-community/cli-platform-ios": "4.13.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript,typescript,typescriptreact",
+        "path": "./snippets.json"
+      }
+    ]
+  }
+}
