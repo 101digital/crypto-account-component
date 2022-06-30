@@ -1,6 +1,6 @@
 {
   "name": "crypto-account-component",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A component for crypto account by 101D",
   "repository": "https://github.com/101digital/crypto-account-component",
   "main": "index.ts",
