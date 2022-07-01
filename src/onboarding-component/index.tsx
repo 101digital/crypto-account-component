@@ -43,9 +43,9 @@ const OnboardingComponent = forwardRef(({ Root }: OnboardingComponentProps) => {
   const renderOnboardingItem = (item: OnboardingItem) => (
     <View style={styles.sliderWrapper}>
       <Text style={styles.title}>{item.title}</Text>
-      {item.image && (
+      {(item.image || item.imageUrl) && (
         <View style={styles.imageWrapper}>
-          <Image style={styles.image} source={item.image} />
+          <Image style={styles.image} source={item.image ? item.image : { uri: item.imageUrl }} />
         </View>
       )}
       {item.subtitle && <Text style={styles.subTitle}>{item.subtitle}</Text>}

@@ -16,6 +16,7 @@ const useMergeStyles = (style?: OnboardingComponentStyles): OnboardingComponentS
       backgroundColor: colors.primaryColor,
       flex: 1,
       justifyContent: 'space-between',
+      padding: horizontalPaddingTotal / 2,
     },
     sliderWrapper: { width: itemWidth, alignItems: 'center', marginTop: 45 },
     imageWrapper: { width: 150, height: 150, marginTop: 30 },
