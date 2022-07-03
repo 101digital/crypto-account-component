@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, useEffect } from 'react';
 import { Image, View, Text, TouchableOpacity } from 'react-native';
 import { SearchInput } from 'react-native-theme-component';
 import { MarketPriceComponentProps } from './types';
@@ -6,10 +6,26 @@ import useMergeStyles from './styles';
 import { ArrowRightIcon } from '../assets/index';
 
 const MarketPricesComponent = forwardRef(({ Root }: MarketPriceComponentProps) => {
-  const { style } = Root || {};
+  const { style, props } = Root || {};
 
   const styles = useMergeStyles(style);
   const cryptoImg = require('../assets/images/listCrypto.png');
+
+  useEffect(() => {
+    //TODO: implement load list crypto
+
+  }, []);
+
+  const onSearch = (text: string) => {
+    console.log('onSearch crypto: ', text);
+    //TODO: implement search crypto
+
+  }
+
+  const renderListCryptoData = () => {
+    // Temporarily show image
+    return <Image style={styles.image} source={cryptoImg} resizeMode={'stretch'} />
+  }
 
   return (
     <View style={styles.container}>
@@ -23,10 +39,14 @@ const MarketPricesComponent = forwardRef(({ Root }: MarketPriceComponentProps) =
         </View>
       </View>
       <View>
-        <SearchInput />
+        <SearchInput 
+          blurOnSubmit={true} 
+          onChangeTextDebounce={onSearch}
+          placeholder={'Search'} 
+          inputStyles={props?.searchInputProps?.inputStyles} />
       </View>
       <View style={styles.imageWrapper}>
-        <Image style={styles.image} source={cryptoImg} resizeMode={'stretch'} />
+        {renderListCryptoData()}
       </View>
     </View>
   );

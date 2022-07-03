@@ -1,10 +1,12 @@
 import { ImageSourcePropType, ImageStyle, StyleProp, TextStyle, ViewStyle } from 'react-native';
+import { SearchInputProps, SearchInputStyles } from 'react-native-theme-component';
 
 export type MarketPriceComponentProps = {
   Root?: {
     style?: MarketPriceComponentStyles;
     props?: {
       onSearchingFinished: () => void;
+      searchInputProps: SearchInputProps;
     };
   };
 };

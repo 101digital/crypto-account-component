@@ -4584,9 +4584,9 @@ react-native-swipe-gestures@^1.0.5:
   resolved "https://registry.yarnpkg.com/react-native-swipe-gestures/-/react-native-swipe-gestures-1.0.5.tgz#a172cb0f3e7478ccd681fd36b8bfbcdd098bde7c"
   integrity sha512-Ns7Bn9H/Tyw278+5SQx9oAblDZ7JixyzeOczcBK8dipQk2pD7Djkcfnf1nB/8RErAmMLL9iXgW0QHqiII8AhKw==
 
-"react-native-theme-component@https://github.com/101digital/react-native-theme-component.git":
-  version "1.0.97"
-  resolved "https://github.com/101digital/react-native-theme-component.git#af78d84195b5a02ced7d07c20916565e5626e90d"
+"react-native-theme-component@https://github.com/101digital/react-native-theme-component.git#1.0.100":
+  version "1.0.100"
+  resolved "https://github.com/101digital/react-native-theme-component.git#98bb043c8f8a1bd888f71ea068a80aa1e8f092d1"
   dependencies:
     "@types/xdate" "^0.8.32"
     currency.js "^2.0.4"
